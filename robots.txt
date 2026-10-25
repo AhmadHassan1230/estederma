@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /tools/
+Disallow: /urun.html
+
+Sitemap: https://www.estederma.com/sitemap.xml
