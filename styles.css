@@ -514,3 +514,7 @@ img, video { height: auto; }
 .f-bottom a { display: inline-block; padding: 12px 0; }
 .idx-row .in a { display: inline-block; padding: 10px 0; }
 @media (max-width: 900px) { .caps { font-size: 12px; letter-spacing: .14em; } }
+
+.made { margin-top: 18px; text-align: center; font-size: 12px; color: var(--ink-3); }
+.made a { color: var(--gold); padding: 8px 2px; display: inline-block; transition: color .3s; }
+.made a:hover { color: var(--ink); }

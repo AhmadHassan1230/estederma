@@ -149,6 +149,7 @@
             <span>${U.footerNote}</span>
             <a href="#">${U.kvkk}</a>
           </div>
+          <p class="made" lang="en">Made by <a href="https://axerodesign.com" target="_blank" rel="noopener">axerodesign</a></p>
         </div>
       </div>`;
   }
