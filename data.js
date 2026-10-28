@@ -523,13 +523,13 @@ window.ESD.copy = {
       { t: { tr: 'Teknik destek', en: 'Technical support' }, d: { tr: 'Formül, endikasyon ve uygulama sorularınıza hızlı yanıt.', en: 'Quick answers on formulas, indications and application.' } }
     ] },
   cta: { lock: { tr: ['Kliniğiniz için', '<i>Neotiva</i>'], en: ['Neotiva for', '<i>your clinic</i>'] } },
-  about: { lock: { tr: ['Bir distribütörden', '<i>daha fazlası</i>'], en: ['More than', '<i>a distributor</i>'] } },
+  about: { lock: { tr: ['Estederma kurumsal:', '<i>medikal estetik distribütörü</i>'], en: ['About Estederma:', '<i>medical aesthetics distributor</i>'] } },
   values: { lock: { tr: ['Çalışma', '<i>biçimimiz</i>'], en: ['How', '<i>we work</i>'] } },
   founder: { lock: { tr: ['Kurucu', '<i>mesajı</i>'], en: ['A word from', '<i>the founder</i>'] } },
-  products: { lock: { tr: ['Neotiva', '<i>premium meso solution</i>'], en: ['Neotiva', '<i>premium meso solution</i>'] } },
+  products: { lock: { tr: ['Neotiva', '<i>rejeneratif estetik ürünleri</i>'], en: ['Neotiva', '<i>regenerative aesthetic products</i>'] } },
   protocol: { lock: { tr: ['Üç fazlı', '<i>protokol</i>'], en: ['A three-phase', '<i>protocol</i>'] } },
   meso: { lock: { tr: ['Altı', '<i>formül</i>'], en: ['Six', '<i>formulas</i>'] } },
   eventsPage: { lock: { tr: ['Kongre', '<i>&amp; etkinlikler</i>'], en: ['Congresses', '<i>&amp; events</i>'] } },
-  contact: { lock: { tr: ['Bize', '<i>ulaşın</i>'], en: ['Get', '<i>in touch</i>'] } },
+  contact: { lock: { tr: ['Estederma', '<i>iletişim</i>'], en: ['Contact', '<i>Estederma</i>'] } },
   formula: { tr: 'Formül', en: 'The formula' }
 };

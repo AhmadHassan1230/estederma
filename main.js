@@ -25,7 +25,7 @@
   const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
 
   /* lockup: array of lines (caps + <i>italic</i>) */
-  const lock = (lines, cls = '') => `<h2 class="lock ${cls}" data-lock>${L(lines).map(l => `<span class="ln"><span class="lni">${l}</span></span>`).join(' ')}</h2>`;
+  const lock = (lines, cls = '', tag = 'h2') => `<${tag} class="lock ${cls}" data-lock>${L(lines).map(l => `<span class="ln"><span class="lni">${l}</span></span>`).join(' ')}</${tag}>`;
   const chapter = (n, label, cls = '') => `<div class="chapter ${cls}"><span class="num">${n}</span><span class="caps">${label}</span></div>`;
 
   /* jewel = silk backdrop + pack object (or a full scene) */
@@ -55,14 +55,14 @@
       <div class="wrap head-in">
         <button class="menu-btn" aria-expanded="false" aria-controls="mnav" aria-label="${U.menu}"><span class="burger" aria-hidden="true"><i></i><i></i></span><span class="lbl">${U.menu}</span></button>
         <a class="brand" href="index.html" aria-label="Estederma Aesthetics — ${U.nav.home}"><span class="mask-emblem" aria-hidden="true"></span></a>
-        <div class="head-r">
-          <a class="hl ${cur === 'about' ? 'is-active' : ''}" href="kurumsal.html">${U.nav.about}</a>
-          <a class="hl ${cur === 'products' ? 'is-active' : ''}" href="urunler.html">${U.nav.products}</a>
-          <a class="hl ${cur === 'contact' ? 'is-active' : ''}" href="iletisim.html">${U.nav.contact}</a>
+        <nav class="head-r" aria-label="${lang === 'en' ? 'Main navigation' : 'Ana menü'}">
+          <a class="hl ${cur === 'about' ? 'is-active' : ''}" href="kurumsal.html"${cur === 'about' ? ' aria-current="page"' : ''}>${U.nav.about}</a>
+          <a class="hl ${cur === 'products' ? 'is-active' : ''}" href="urunler.html"${cur === 'products' ? ' aria-current="page"' : ''}>${U.nav.products}</a>
+          <a class="hl ${cur === 'contact' ? 'is-active' : ''}" href="iletisim.html"${cur === 'contact' ? ' aria-current="page"' : ''}>${U.nav.contact}</a>
           <div class="lang" role="group" aria-label="Language">
             <button data-lang="tr" class="${lang === 'tr' ? 'is-on' : ''}" aria-pressed="${lang === 'tr'}" lang="tr" aria-label="Türkçe">TR</button><span aria-hidden="true">/</span><button data-lang="en" class="${lang === 'en' ? 'is-on' : ''}" aria-pressed="${lang === 'en'}" lang="en" aria-label="English">EN</button>
           </div>
-        </div>
+        </nav>
       </div>
       <div class="mnav" id="mnav">
         <div class="mnav-in">
@@ -119,7 +119,7 @@
       <section class="f-cta" data-chapter="${ROMAN[4]}">
         <div class="wrap">
           ${chapter('V', C.chapters[lang][4], 'center')}
-          <div class="mt-m">${lock(C.cta.lock, 'md center')}</div>
+          <div class="mt-m">${lock(C.cta.lock, 'md center', 'p')}</div>
           <p class="body" style="margin:40px auto 0" data-reveal>${L(D.home.cta.body)}</p>
           <div class="actions" data-reveal>
             <a class="btn" href="iletisim.html">${U.cta}</a>
@@ -134,12 +134,12 @@
             <p>${L({ tr: 'Kore biyoteknolojisinin rejeneratif formülleri, Türkiye’deki kliniklerle.', en: 'Regenerative formulas from Korean biotechnology, for clinics in Türkiye.' })}</p>
           </div>
           <div class="f-cols">
-            <div><span class="caps">${U.nav.about}</span>
-              <a href="kurumsal.html">${U.nav.about}</a><a href="kurumsal.html#kurucu-mesaji">${U.nav.founder}</a><a href="kongre.html">${U.nav.events}</a><a href="iletisim.html">${U.nav.contact}</a></div>
-            <div><span class="caps">${U.nav.products}</span>
-              ${D.products.map(p => `<a href="${href(p)}" lang="en">${p.short}</a>`).join('')}</div>
-            <div><span class="caps">${U.address}</span>
-              <p>${b.address.lines.join('<br>')}</p><p>${U.clinicsOnly} · ${U.shipping}</p>${extra}</div>
+            <nav aria-label="${U.nav.about}"><span class="caps">${U.nav.about}</span>
+              <a href="kurumsal.html">${U.nav.about}</a><a href="kurumsal.html#kurucu-mesaji">${U.nav.founder}</a><a href="kongre.html">${U.nav.events}</a><a href="iletisim.html">${U.nav.contact}</a></nav>
+            <nav aria-label="${U.nav.products}"><span class="caps">${U.nav.products}</span>
+              ${D.products.map(p => `<a href="${href(p)}">Neotiva <span lang="en">${p.short}</span></a>`).join('')}</nav>
+            <address><span class="caps">${U.address}</span>
+              <p>${b.address.lines.join('<br>')}</p><p>${U.clinicsOnly} · ${U.shipping}</p>${extra}</address>
             <div><span class="caps">${U.follow}</span>
               <a href="${b.instagramUrl}" target="_blank" rel="noopener">Instagram — @${b.instagram}</a><a href="${b.dmUrl}" target="_blank" rel="noopener">${U.dm}</a>
               <div class="mt-s"><a class="btn" href="iletisim.html">${U.cta}</a></div></div>

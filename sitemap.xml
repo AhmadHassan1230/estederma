@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.estederma.com/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/"/>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://www.estederma.com/en/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/"/>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://www.estederma.com/kurumsal.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/kurumsal.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/kurumsal.html"/>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://www.estederma.com/en/kurumsal.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/kurumsal.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/kurumsal.html"/>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://www.estederma.com/urunler.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urunler.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urunler.html"/>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://www.estederma.com/en/urunler.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urunler.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urunler.html"/>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://www.estederma.com/iletisim.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/iletisim.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/iletisim.html"/>
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://www.estederma.com/en/iletisim.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/iletisim.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/iletisim.html"/>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://www.estederma.com/kongre.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/kongre.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/kongre.html"/>
@@ -74,7 +74,7 @@
   </url>
   <url>
     <loc>https://www.estederma.com/en/kongre.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/kongre.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/kongre.html"/>
@@ -82,128 +82,158 @@
   </url>
   <url>
     <loc>https://www.estederma.com/urun-rh-collagen.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/rh-collagen-scene.webp</image:loc><image:title>Neotiva Rh Collagen</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/rh-collagen-pack.webp</image:loc><image:title>Neotiva Rh Collagen</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-rh-collagen.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-rh-collagen.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-rh-collagen.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/en/urun-rh-collagen.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/rh-collagen-scene.webp</image:loc><image:title>Neotiva Rh Collagen</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/rh-collagen-pack.webp</image:loc><image:title>Neotiva Rh Collagen</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-rh-collagen.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-rh-collagen.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-rh-collagen.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/urun-eye-glow.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/eye-glow-pack.webp</image:loc><image:title>Neotiva Eye Glow</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-eye-glow.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-eye-glow.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-eye-glow.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/en/urun-eye-glow.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/eye-glow-pack.webp</image:loc><image:title>Neotiva Eye Glow</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-eye-glow.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-eye-glow.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-eye-glow.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/urun-lift-face.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/lift-face-scene.webp</image:loc><image:title>Neotiva Lift Face</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/lift-face-pack.webp</image:loc><image:title>Neotiva Lift Face</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-lift-face.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-lift-face.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-lift-face.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/en/urun-lift-face.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/lift-face-scene.webp</image:loc><image:title>Neotiva Lift Face</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/lift-face-pack.webp</image:loc><image:title>Neotiva Lift Face</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-lift-face.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-lift-face.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-lift-face.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/urun-glow-face.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/glow-face-scene.webp</image:loc><image:title>Neotiva Glow Face</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/glow-face-pack.webp</image:loc><image:title>Neotiva Glow Face</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-glow-face.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-glow-face.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-glow-face.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/en/urun-glow-face.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/glow-face-scene.webp</image:loc><image:title>Neotiva Glow Face</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/glow-face-pack.webp</image:loc><image:title>Neotiva Glow Face</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-glow-face.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-glow-face.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-glow-face.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/urun-dmae-max.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/dmae-max-scene.webp</image:loc><image:title>Neotiva DMAE Max</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/dmae-max-pack.webp</image:loc><image:title>Neotiva DMAE Max</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-dmae-max.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-dmae-max.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-dmae-max.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/en/urun-dmae-max.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/dmae-max-scene.webp</image:loc><image:title>Neotiva DMAE Max</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/dmae-max-pack.webp</image:loc><image:title>Neotiva DMAE Max</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-dmae-max.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-dmae-max.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-dmae-max.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/urun-nad-pro.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/nad-pro-scene.webp</image:loc><image:title>Neotiva NAD+ Pro</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/nad-pro-pack.webp</image:loc><image:title>Neotiva NAD+ Pro</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-nad-pro.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-nad-pro.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-nad-pro.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/en/urun-nad-pro.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/nad-pro-scene.webp</image:loc><image:title>Neotiva NAD+ Pro</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/nad-pro-pack.webp</image:loc><image:title>Neotiva NAD+ Pro</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-nad-pro.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-nad-pro.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-nad-pro.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/urun-hair-growth.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/hair-growth-scene.webp</image:loc><image:title>Neotiva Hair Growth</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/hair-growth-pack.webp</image:loc><image:title>Neotiva Hair Growth</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-hair-growth.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-hair-growth.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-hair-growth.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/en/urun-hair-growth.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/hair-growth-scene.webp</image:loc><image:title>Neotiva Hair Growth</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/hair-growth-pack.webp</image:loc><image:title>Neotiva Hair Growth</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-hair-growth.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-hair-growth.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-hair-growth.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/urun-vital-plus.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/vital-scene.webp</image:loc><image:title>Neotiva Vital+</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/vital-pack.webp</image:loc><image:title>Neotiva Vital+</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-vital-plus.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-vital-plus.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-vital-plus.html"/>
   </url>
   <url>
     <loc>https://www.estederma.com/en/urun-vital-plus.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.estederma.com/assets/products/vital-scene.webp</image:loc><image:title>Neotiva Vital+</image:title></image:image>
+    <image:image><image:loc>https://www.estederma.com/assets/products/vital-pack.webp</image:loc><image:title>Neotiva Vital+</image:title></image:image>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.estederma.com/urun-vital-plus.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.estederma.com/en/urun-vital-plus.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.estederma.com/urun-vital-plus.html"/>

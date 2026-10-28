@@ -87,7 +87,7 @@
 
       <section class="sec intro-simple">
         <div class="wrap narrow center">
-          <p class="prose-lg" data-reveal>${L(H.statement)}</p>
+          <h2 class="prose-lg" data-reveal>${L(H.statement)}</h2>
           <div class="actions mt-m" data-reveal style="justify-content:center"><a class="btn" href="urunler.html">${U.nav.products}</a><a class="tlink" href="kurumsal.html">${U.nav.about}</a></div>
         </div>
       </section>
@@ -102,7 +102,7 @@
             ].map(([l, to, img, cls], i) => `
               <a class="tile ${cls}" href="${to.includes('.html') ? to : href(bySlug(to))}">
                 <div class="frame" data-img><img class="par" src="${img}" alt="${l.name}" loading="lazy" decoding="async" data-parallax="8"></div>
-                <div class="tile-cap"><span class="caps">0${i + 1} — ${L(l.kicker)}</span><h3 lang="en">${l.name.replace('Neotiva ', '<i>Neotiva</i> ')}</h3></div>
+                <div class="tile-cap"><span class="caps">0${i + 1} — ${L(l.kicker)}</span><h2 lang="en">${l.name.replace('Neotiva ', '<i>Neotiva</i> ')}</h2></div>
               </a>`).join('')}
           </div>
         </div>
@@ -111,7 +111,7 @@
       <section class="partner" data-tone="dark">
         <div class="partner-bg"><img class="par" src="assets/products/vital-scene.webp" alt="" loading="lazy" decoding="async" data-parallax="12"></div>
         <div class="wrap partner-in simple">
-          <div>${lock(C.partner.lock, 'md')}<div class="actions mt-m" data-reveal><a class="btn light" href="iletisim.html">${U.cta}</a><a class="tlink" href="${D.brand.dmUrl}" target="_blank" rel="noopener">${U.dm}</a></div></div>
+          <div>${lock(C.partner.lock, 'md', 'h2')}<div class="actions mt-m" data-reveal><a class="btn light" href="iletisim.html">${U.cta}</a><a class="tlink" href="${D.brand.dmUrl}" target="_blank" rel="noopener">${U.dm}</a></div></div>
         </div>
       </section>`;
   }
@@ -304,7 +304,7 @@
       <section class="p-hero">
         ${heroMedia}
         <div class="p-hero-copy">
-          <nav class="crumbs caps"><a href="urunler.html">${T.products}</a><span>—</span><a href="urunler.html#${isMeso ? 'mezoterapi' : p.slug}"><span lang="en">${isMeso ? 'Premium Meso Solution' : line.name}</span></a></nav>
+          <nav class="crumbs caps" aria-label="${lang === 'en' ? 'Breadcrumb' : 'Gezinti yolu'}"><a href="urunler.html">${T.products}</a><span>—</span><a href="urunler.html#${isMeso ? 'mezoterapi' : p.slug}"><span lang="en">${isMeso ? 'Premium Meso Solution' : line.name}</span></a></nav>
           <span class="caps" style="color:var(--deep)">${L(p.complex)}</span>
           <h1 class="lock" data-lock data-manual style="margin-top:28px"><span class="ln"><span class="lni"><i>Neotiva</i></span></span> <span class="ln"><span class="lni" lang="en">${p.short}</span></span></h1>
           <p class="lead">${L(p.title)}</p>
@@ -320,9 +320,9 @@
       <section class="sec">
         <div class="wrap narrow center">
           ${chapter(next(), C.formula[lang], 'center')}
-          <p class="prose-lg mt-m" data-reveal>${L(p.intro)}</p>
+          <h2 class="prose-lg mt-m" data-reveal>${L(p.intro)}</h2>
           <div class="phases" style="text-align:center" data-stagger>
-            ${ben.slice(0, 3).map((b, i) => `<div class="phase"><span class="n">${ROMAN[i]}</span><h3 style="font-size:clamp(26px,2.2vw,36px);font-weight:300">${b}</h3></div>`).join('')}
+            ${ben.slice(0, 3).map((b, i) => `<div class="phase"><span class="n">${ROMAN[i]}</span><p class="benefit">${b}</p></div>`).join('')}
           </div>
         </div>
       </section>
@@ -429,7 +429,7 @@
   function contact() {
     const Cp = D.contactPage, F = Cp.form[lang], b = D.brand;
     const tel = b.phone.replace(/[^\d+]/g, '');
-    const row = (label, inner) => `<div class="crow"><span class="caps">${label}</span>${inner}</div>`;
+    const row = (label, inner) => `<div class="crow"><h2 class="caps">${label}</h2>${inner}</div>`;
     main.innerHTML = `
       ${phead('—', U.nav.contact, C.contact.lock, L(Cp.hero.body))}
       <section class="sec" style="padding-top:clamp(24px,3vw,48px)">
@@ -437,7 +437,7 @@
           <div class="cdetails">
             ${row(F.email, `<a class="cbig" href="mailto:${b.email}">${b.email}</a>`)}
             ${row(F.phone, `<a class="cbig" href="tel:${tel}">${b.phone}</a>`)}
-            ${row(U.address, `<a class="cbig addr" href="${b.address.mapLink}" target="_blank" rel="noopener">${b.address.lines.join('<br>')}</a>`)}
+            ${row(U.address, `<address><a class="cbig addr" href="${b.address.mapLink}" target="_blank" rel="noopener">${b.address.lines.join('<br>')}</a></address>`)}
             <div class="cactions">
               <a class="btn" href="mailto:${b.email}">${F.email}</a>
               <a class="btn alt" href="tel:${tel}">${F.phone}</a>
@@ -474,5 +474,11 @@
   };
   const [render, motion] = routes[page] || routes.home;
   if (!PRE) render();
+  document.querySelectorAll('main section').forEach((sec, i) => {
+    const h = sec.querySelector('h1, h2');
+    if (!h) return;
+    if (!h.id) h.id = 'h-' + (sec.id || i);
+    sec.setAttribute('aria-labelledby', h.id);
+  });
   ESDK.boot(motion);
 })();

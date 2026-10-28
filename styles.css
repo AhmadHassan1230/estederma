@@ -518,3 +518,12 @@ img, video { height: auto; }
 .made { margin-top: 18px; text-align: center; font-size: 12px; color: var(--ink-3); }
 .made a { color: var(--gold); padding: 8px 2px; display: inline-block; transition: color .3s; }
 .made a:hover { color: var(--ink); }
+
+/* semantic tags keep the same look */
+address { font-style: normal; }
+.f-cols nav, .f-cols address { display: block; }
+.crow h2.caps { margin: 0 0 10px; }
+.mosaic .tile-cap h2 { font-family: var(--display); font-weight: 400; font-size: clamp(30px, 2.8vw, 48px); line-height: 1.04; margin-top: 10px; letter-spacing: -.015em; }
+h2.prose-lg { margin: 0; }
+.benefit { font-family: var(--display); font-weight: 400; font-size: clamp(24px, 2.2vw, 34px); line-height: 1.15; margin: 14px 0 0; }
+.hl[aria-current="page"]::after { transform: scaleX(1); }

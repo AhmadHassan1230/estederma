@@ -9,8 +9,10 @@ Static site. Content lives in `data.js`, rendering in `main.js` + `pages.js`, st
 3. Run `node tools/build.mjs`. This:
    - writes every page with its full SEO `<head>`: title, description, canonical, hreflang, Open Graph / Twitter, icons, JSON-LD;
    - prerenders each page's content in headless Chrome, so the HTML already contains the text (good for Google and for slow phones);
-   - generates `en/` (English pages), `sitemap.xml`, `robots.txt`, `site.webmanifest` and the `urun.html` legacy redirect.
-4. Upload the whole folder except `tools/`.
+   - adds `width`/`height` to every image (no layout shift) and a rich JSON-LD graph per page (Organization/LocalBusiness, WebSite, WebPage subtype, BreadcrumbList, Product);
+   - generates `en/` (English pages), `sitemap.xml` (with hreflang + images), `robots.txt`, `site.webmanifest`, the `urun.html` legacy redirect, plus `_headers` (Netlify / Cloudflare) and `.htaccess` (Apache) for caching and security headers;
+   - finishes with an **SEO lint** that checks every built page: one `<h1>`, no skipped heading levels, title ≤ 70 and description 70–160 chars, canonical + hreflang, image alt and dimensions. Use `--strict` to fail the build on any warning.
+4. Upload the whole folder except `tools/` (the host reads `_headers` or `.htaccess`, whichever it supports).
 
 **Before going live:** set `SITE` at the top of `tools/build.mjs` to the real domain, rebuild, then submit `sitemap.xml` in Google Search Console.
 
