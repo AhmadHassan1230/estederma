@@ -19,8 +19,10 @@ AddDefaultCharset UTF-8
   Header set X-Content-Type-Options "nosniff"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
-# After the domain is final, force https + one canonical host (replace example.com):
-# RewriteEngine On
-# RewriteCond %{HTTPS} off [OR]
-# RewriteCond %{HTTP_HOST} !^www\.example\.com$ [NC]
-# RewriteRule ^(.*)$ https://www.example.com/$1 [R=301,L]
+# Force https and the canonical host (estederma.com, no www)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\.estederma\.com$ [NC]
+  RewriteRule ^(.*)$ https://estederma.com/$1 [R=301,L]
+</IfModule>

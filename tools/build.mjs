@@ -18,7 +18,7 @@ import vm from 'node:vm';
 import { execFile } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
-const SITE = 'https://www.estederma.com';   // CONFIRM — real production domain (no trailing slash)
+const SITE = 'https://estederma.com';   // production domain, canonical host without www (no trailing slash)
 const DEV = 'http://localhost:5238';
 const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -346,11 +346,13 @@ AddDefaultCharset UTF-8
   Header set X-Content-Type-Options "nosniff"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
-# After the domain is final, force https + one canonical host (replace example.com):
-# RewriteEngine On
-# RewriteCond %{HTTPS} off [OR]
-# RewriteCond %{HTTP_HOST} !^www\\.example\\.com$ [NC]
-# RewriteRule ^(.*)$ https://www.example.com/$1 [R=301,L]
+# Force https and the canonical host (estederma.com, no www)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\\.estederma\\.com$ [NC]
+  RewriteRule ^(.*)$ https://estederma.com/$1 [R=301,L]
+</IfModule>
 `);
   console.log(`\nBuilt ${jobs.length} pages + sitemap.xml, robots.txt, site.webmanifest (v=${V})`);
 }

@@ -14,7 +14,7 @@ Static site. Content lives in `data.js`, rendering in `main.js` + `pages.js`, st
    - finishes with an **SEO lint** that checks every built page: one `<h1>`, no skipped heading levels, title ≤ 70 and description 70–160 chars, canonical + hreflang, image alt and dimensions. Use `--strict` to fail the build on any warning.
 4. Upload the whole folder except `tools/` (the host reads `_headers` or `.htaccess`, whichever it supports).
 
-**Before going live:** set `SITE` at the top of `tools/build.mjs` to the real domain, rebuild, then submit `sitemap.xml` in Google Search Console.
+**Domain:** `SITE` in `tools/build.mjs` is `https://estederma.com` (no `www`). After deploying, submit `https://estederma.com/sitemap.xml` in Google Search Console. If the host serves `www.estederma.com` too, redirect it to the apex (the Apache `.htaccess` already does).
 
 ## URLs
 
